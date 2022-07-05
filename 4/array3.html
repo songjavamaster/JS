@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+    <script>
+        const itemsB = ['사과', '배', '바나나']
+        const index = itemsB.indexOf('바나나')
+        console.log(index)/*배열 내부에 바나나가 있으므로 해당요소 index 2가 출력*/
+        itemsB.splice(index, 1)/*splice=배열 2번째 인덱스에 있는 1개의 요소를 제거*/
+        console.log(itemsB)/*배열에서 바나나가 제거됨*/
+        console.log(itemsB.indexOf('바나나'))/*다시 바나나가 있냐?>>배열에 바나나가 없으므로 -1을 출력*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

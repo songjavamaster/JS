@@ -6,53 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test1</title>
     <style>
+        .main{
+            width: 1000px;
+        }
         header, nav, section, aside, footer{
-            width: 100%;
-            height: 100px;
-            border: 3px solid green;
-            margin: 10px;
-            margin-left: 3px;
+            margin: 3px; /*외부 여백*/
+            border: 2px solid rgb(114, 150, 60);/*칸 두께 색상*/
+        }
+        header{
+            width: 1000px; /*넓이*/
+            height: 100px;  /*높이*/
         }
         nav{
-            width: 100%;
-            height: 50px;
+            width: 1000px;
+            height: 80px;   
         }
         section{
-            width: 65%;
+            width: 600px;
             height: 300px;
-            background-size: 300px;
-            display: inline-block;
-    
+            background: url(dog.PNG)no-repeat; /*이미지 한개만 출력*/
+            background-size: 100% 300px; /*이미지 사이즈*/
+            display: inline-block; /* 한 라인에 나눠서 배치*/
         }
         aside{
-            width: 30%;
+            width: 390px;
             height: 300px;
-            float: right;   
+            background-color: yellow;
+            display: inline-block; /* 한 라인에 나눠서 배치*/
+            position: fixed; /*화면에 고정*/
         }
         footer{
-            background-color: greenyellow;
+            width: 1000px;
+            height: 100px;
+            background-color: rgb(197, 245, 229);
+            display: flex;
+        }
+        .footer-box{
+            border-top: 1px solid rgb(197, 245, 229);
+            background-color: white;
+            padding-left: 30px;
+            margin : 10px 0px 10px 40px;
+            display: flex;
+            width: 800px;
         }
         #address{
-            border: 1px solid white;
-            font-size: 10px;
-            width: 80%;
-            height: 50px;
-            
+            flex: 1;
+            font-size: 5px;
+            display: inline-block;
+           margin-top: 10px;
         }
-    
+        #customer{
+            flex: 1;
+            font-size: 15px;
+            display: inline-block;
+            text-align: end;
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
+    <div class="main">
     <header>상단헤더</header>
     <nav>내비게이션 메뉴</nav>
-    <section>메인 콘텐츠</section>
+    <section>메인콘텐츠</section>
     <aside>사이드바</aside>
-    <footer>하단푸터
-            <div id="address">
-                <p>루비토 손해보험(주)대표이사:홍길동|사업자등록번호:323-32-12345<br></p>
-                <p>전화:02-323-3234|서울시 강남구 가나마다라 323번지<br></p>
-                <p>Copyright.All right reserved.</p>
-            </div>    
+    <footer>하단 푸터
+        <div class="footer-box">
+        <div id="address">
+            <p>루베토 손해보험(주)대표이사:홍길동|사업자등록번호:123-12-12354<br>
+            전화:02-123-1234|서울시 강남구 가나타동 123번지<br><br>
+        copyright by Uubdto company all Right Reserved</p>
+        </div>
+            <div id="customer">
+                <p>고객센터 1588-1234<br>
+                <img src="facebook.PNG"></p>
+            </div>
+        </div>
     </footer>
+    </div>
 </body>
 </html>

@@ -6,38 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test2</title>
     <style>
-        header, nav, section, aside, footer{
-            width: 100%;
-            height: 100px;
-            border: 2px solid green;
-            margin: 5px;
+        *{
+            margin: 0px;
+            padding: 0px;
         }
+        .main{
+            width: 1000px;
+        }
+        header, nav, section, aside, footer{
+            margin: 3px; /*외부 여백*/
+            border: 2px solid rgb(114, 150, 60);/*칸 두께 색상*/
+        }
+        header{
+            width: 1000px; /*넓이*/
+            height: 100px;  /*높이*/
+            background-color: rgb(199, 241, 227);
+            display: flex;
+            flex: 1;
+               
+        }
+        #logo{
+            flex: 1;
+            float: left;
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+        h4{
+            margin-top : 50px;
+            flex: 1;
+            margin-left: 100px;
+            
+        }
+        #top{
+            flex: 1;
+            
+        }
+        #top ul {
+            list-style: none;
+            background-color: white;
+            width: 270px;
+            margin-top: 30px;
+            border : 1px solid black;
+        }
+        #top ul li {
+            display: inline-block;
+            margin : 2px 0px;
+        }
+
+        #top ul li:nth-child(1),li:nth-child(2),li:nth-child(3) {
+            border-right: 1px solid black;
+            
+        }
+        #top ul li a{
+            text-decoration: none;
+            color : black;
+        }
+        #top ul li:hover a{
+            color : red;
+        } 
+        
         nav{
-            width: 100%;
-            height: 50px;
+            width: 1000px;
+            height: 80px;   
         }
         section{
-            width: 65%;
+            width: 600px;
             height: 300px;
-            background-size: 250px;
-            display: inline-block;
+            background: url(dog.PNG)no-repeat; /*이미지 한개만 출력*/
+            background-size: 100% 300px; /*이미지 사이즈*/
+            display: inline-block; /* 한 라인에 나눠서 배치*/
         }
         aside{
-            width: 30%;
+            width: 390px;
             height: 300px;
             background-color: yellow;
-            float: right;
-            
+            display: inline-block; /* 한 라인에 나눠서 배치*/
+            position: fixed; /*화면에 고정*/
+        }
+        footer{
+            width: 1000px;
+            height: 100px;
         }
     </style>
 </head>
 <body>
+    <div class="main">
     <header>
-        <div id="logo"><img src="logo.PNG" alt="">신뢰로 보답하는 리비토손해보험</div>
+        <div id="logo">
+            <img src="LOGOFULL.PNG">        
+        </div>
+        <h4>상단헤더</h4>
+        <div id="top">
+            <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="">회원가입</a></li>
+            <li><a href="">사이트 맵</a> </li>
+            <li><a href="">회사소개</a></li>
+            </ul>
+        </div>
+        
     </header>
     <nav>내비게이션 메뉴</nav>
-    <section>메인 콘텐츠</section>
+    <section>메인콘텐츠</section>
     <aside>사이드바</aside>
     <footer>하단 푸터</footer>
+    </div>
 </body>
 </html>
