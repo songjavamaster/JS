@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            width: 1000px;
+        }
+        header, nav, section,aside, footer{
+            margin: 5px;
+            border: 2px solid rgb(121, 185, 121);
+        }
+        header{
+            width: 1000px;
+            height: 100px;
+        }
+        nav{
+            width: 1000px;
+            height: 80px;
+        }
+        section{
+            width: 700px;
+            height: 300px;
+            display: inline-block;
+            background: url(chihuahua-puppy-g9a61856bd_1920.jpg);
+            background-size: 700px;
+        }
+        aside{
+            display: inline-block;
+            width: 280px;
+            height: 300px;
+            background-color: yellow;
+        }
+        footer{
+            width: 1000px;
+            height: 150px;
+            background-color: rgb(121, 185, 121) ;
+            flex: 1;
+            display: flex;
+        }
+        .footer-box{
+            background-color: white;
+            margin: 30px 30px 0px 30px; 
+            display: flex;
+            height: 100px;
+            width: 800px;
+            border-top: 1px solid gray;
+        }
+        #address{
+            flex: 1;
+            display: flex;
+            font-size: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        #customer{
+            flex: 1;
+            display: inline-block;
+            margin-right: 50px;
+            margin-top: 20px;
+            text-align: end;
+            color: rgb(121, 185, 121);
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+   <header>상단 헤더</header>
+   <nav>내비게이션 메뉴</nav>
+   <section>메인 콘텐츠</section>
+   <aside>사이드바</aside>
+   <footer>하단 푸터
+    <div class="footer-box">
+        <div id="address">
+            <p>루베토 손해보험(주)대표이사:홍길동|사업자등록번호:123-12-12354<br>
+                전화:02-123-1234|서울시 강남구 가나타동 123번지<br><br>
+            copyright by Uubdto company all Right Reserved</p>
+        </div>
+        <div id="customer"><p>고객센터 1588-1234<br>
+            <img src="facebook.PNG"></p></div>
+    </div>
+   </footer> 
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            width: 1000px;
+        }
+        header, nav, section,aside, footer{
+            margin: 5px;
+            border: 2px solid rgb(121, 185, 121);
+        }
+        header{
+            width: 1000px;
+            height: 100px;
+            display: flex;
+            background-color: rgb(202, 241, 192);
+            
+        }
+        #logo{
+        flex: 1;
+        
+        padding: 30px;
+        }
+        h3{
+            flex: 1;
+            
+            margin: 60px 0px 0px 80px;
+            
+        }
+        #top{
+            flex: 1;
+            
+        }
+        #top ul{
+            background-color: white;
+            margin-right: 80px;
+            margin-top: 20px;
+        }
+        #top ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 2px 0px;
+        }
+        #top ul li:nth-child(1),li:nth-child(2),li:nth-child(3) {
+            border-right: 1px solid black;
+        }
+        #top ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+        }
+        #top ul li:hover a{
+            color: blueviolet;
+        }
+        nav{
+            width: 1000px;
+            height: 80px;
+        }
+        section{
+            width: 700px;
+            height: 300px;
+            display: inline-block;
+            background: url(chihuahua-puppy-g9a61856bd_1920.jpg);
+            background-size: 700px;
+        }
+        aside{
+            display: inline-block;
+            width: 280px;
+            height: 300px;
+            background-color: yellow;
+        }
+        footer{
+            width: 1000px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+   <header>
+    <div id="logo">
+        <img src="LOGOFULL.PNG" >
+    </div>
+    <h3>상단헤더</h3>
+    <div id="top">
+        <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">사이트 맵</a></li>
+            <li><a href="#">회사소개</a></li>
+        </ul>
+    </div>
+   </header>
+   <nav>내비게이션 메뉴</nav>
+   <section>메인 콘텐츠</section>
+   <aside>사이드바</aside>
+   <footer>하단 푸터</footer> 
+</div>
+</body>
+</html>
