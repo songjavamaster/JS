@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="2cart-page.css" rel="stylesheet" type="text/css" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function()  {
+      const order=document.querySelector('#order')
+
+      order.addEventListener('click',(event)=>{
+       alert("입금계좌 - 농협:456-4567-4567")
+      })
+   })
+   </script>
+    
+</head>
+<body>
+    <div id="body-wrapper">
+        <div id="body-content">
+    <!-- 헤더 시작 -->
+    <header>
+        <section id="top">
+            <a id="logo" href="1main-page.html"><img src="logo (1).PNG" style="width:100px; height:60px;"></a>
+            <div id="search">
+                <div id="search_title">SEARCH</div>
+                <div id="search_form"><input type="text"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div id="search_button"></div>
+            </div>
+            <nav id="top_menu">
+                <ul>
+                    <li class="green"><a href="#">로그인</a></li>
+                    <li class="green"><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </section>
+        <nav id="main_menu">
+            <ul>
+                <li><a href="3detail-page.html">상세 페이지</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">고객 갤러리</a></li>
+                <li><a href="#">주문배송</a></li>
+                <li><a href="#">자주 하는 질문</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 헤더 끝 -->
+
+    <!--4.1왼쪽 콘텐츠-카테고리-->
+    <section id="bodymain">
+<section id="main">
+    <aside id="left">
+        <div id="cat_title">
+            CATEGORY ITEM
+        </div>
+        <ul>
+            <li>생활 아트</li>
+            <li>컨버스 아트</li>
+            <li>사진 벽지</li>
+            <li>창문형/현관문형</li>
+            <li>포인트 벽지</li>
+            <li>세계지도 벽지</li>
+            <li>어린이방 세계지도</li>
+            <li>족자형 풀스크린</li>
+            <li>맞춤제작 결제창</li>
+        </ul>
+        <div id="customer">
+            <img src="logo (1).PNG" width="200" height="90">
+        </div>
+    </aside><!--왼쪽 콘텐츠-카테고리-->
+
+    <!---장바구니-->
+    <section id="right">
+        <h2 id="cart_title">
+            <span id="greentext">SHOPPING CART</span>  장바구니
+            <hr>
+        </h2>
+        <div id="process">
+            <img src="process.JPG">
+        </div>
+
+        <table>
+            <tr class="title">
+                <th>선택</th>
+                <th>상품명</th>
+                <th>판매가</th>
+                <th>수량</th>
+                <th>적립금</th>
+                <th>배송비</th>
+                <th>합계</th>
+            </tr>
+            <tr class="items">
+                <td class="col1"><input type="checkbox"></td>
+                <td class="col2">
+                    sjdy-005 펄실크 벽지/가로 125cm x 세로 90cm
+                </td>
+                <td class="col3">19000원</td>
+                <td class="col4">
+                    <input type="checkbox">
+                    <button>수정</button>
+                </td>
+                <td class="col5">100원</td>
+                <td class="col6">3,000원</td>
+                <td class="col7">22,000원</td>
+            </tr>
+
+            <tr class="items">
+                <td class="col1"><input type="checkbox"></td>
+                <td class="col2">
+                    sjdy-005 펄실크 벽지/가로 125cm x 세로 90cm
+                </td>
+                <td class="col3">19000원</td>
+                <td class="col4">
+                    <input type="checkbox">
+                    <button>수정</button>
+                </td>
+                <td class="col5">100원</td>
+                <td class="col6">3,000원</td>
+                <td class="col7">22,000원</td>
+            </tr>
+
+            <tr class="total_price">
+                <td colspan="7">
+                    [상품 구매 금액] : 19,000 + [배송비] : 3000 = [총구매액] : <span>22,000원</span>
+                </td>
+            </tr>
+
+            <tr class="order_status_box">
+                <td colspan="7">
+                    <div class="order_status">
+                        <p><span>고객님의 총 주문 합계 금액입니다</span></p>
+                    
+                    <div>
+                    <ul>
+                        <li class="col1">[상품 구매 금액]:</li>
+                        <li class="col2">19,000원</li>
+                    </ul>
+                    <ul>
+                        <li class="col1">배송비:</li>
+                        <li class="col2">3,000원</li>
+                    </ul>
+                    <ul>
+                        <li class="col1"><span>총 주문 합계 금액</span></li>
+                        <li class="col2"><span>21,000원</span></li>
+                    </ul>
+                    </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <ul id="order_buttons">
+            <li><input type="button" class="but" id="order" value="주문하기"></li>
+            <li><input type="button" class="but" value="장바구니비우기"> </li>
+            <li><input type="button" class="but" value="쇼핑 계속하기"> </li>
+            <li><input type="button" class="but" value="선택상품 삭제"> </li>
+            <li><input type="button" class="but" value="전체상품주문"> </li>
+            <li><input type="button" class="but" value="견적서 출력"> </li>
+        </ul>
+    </section><!---장바구니 끝-->
+</section>
+</div>
+
+    
+    <!---푸터시작-->
+    <footer>
+        <section id="footer_menu_box">
+            <nav id="footer_menu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">주문조회</a></li>
+                    <li><a href="#">적립금</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+        </section><!-- section footer_menu_box -->
+            <section id="footer_box">
+                <div id="footer_logo">
+                    <img src="footer1.png" width="150px" >
+                </div>
+                <div id="address">
+                    <img src="footer2.png"width="500px" >
+                </div>
+                <div id="footer_banner">
+                    <img src="footer3.gif" width="100px;">
+                </div>
+            </section><!-- section fotter_box-->
+    </footer>
+    <!---푸터끝-->
+</div>
+</body>
+</html>
